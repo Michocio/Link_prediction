@@ -1,0 +1,11 @@
+https://networkx.github.io/documentation/networkx-1.10/reference/algorithms.link_prediction.html
+W bilbiotece networkx można znaleźć kilka lokalnych miar podobieństwa. (M.in. Jaccard coefficient).
+
+Lepszym źródłem gotowych funkcji jest:
+https://github.com/hhchen1105/networkx_addon/tree/master/similarity
+W powyższym repo można znaleźć większość miar podobieństwa użytych w analizowanym paperze. Autor dostarcza również kilka testów automatycznych.
+
+Tutaj znajdziemy kod w R, implementujący kilka miar podobieństwa. Tego źródła jednak nie polecam, ponieważ sam kod jest nieczytelny.
+https://github.com/defleury/Schmidt_et_al_2016_community_similarity
+
+W ramach researchu, wpadłem również na pomysł użycia sieci neuronowych w predykcji linków. Wydaję się, że duży potencjał ma "nakarmienie" sieci wieloma miaramia podobieństwa oraz innymi informacjami o sieci. Dane te przejawiają przecież dużą regularność. Prawdę mówiąc, podejście autorów papera do predykcji linków (przynajmniej to oparte na miarach podobieństwa) jest trochę naiwne - informacje płynące z podobieństwa pomijają wiele ważnych aspektów sieci oraz tendencji w sieci.
